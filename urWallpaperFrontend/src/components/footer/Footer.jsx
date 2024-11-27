@@ -41,7 +41,7 @@ function Footer() {
           <h5 className="mb-2 text-center text-white fs-1">Feedback</h5>
           <form>
               <textarea type="text" placeholder="Write Ur ThOuGhTs" className="form-control mb-2" />
-              <button type="submit" className="btn btn-warning">Subscribe</button>
+              <button type="submit" className="btn btn-warning">Submit</button>
           </form>
         </div>
         </div>

@@ -48,9 +48,9 @@ function Register() {
       </div>
       <br />
       <div className="row">
-        <div className="col-6 col-sm-10 col-md-6 mx-auto">
+        <div className="col-lg-6 col-sm-12 col-md-10 mx-auto">
           {err && <p className='text-danger text-center'>{err}</p>}
-          <form className='mb-5 mt-5 bg-dark p-5 shadow-lg' onSubmit={handleSubmit(onSubmit)} style={{ borderRadius: "50px" }}>
+          <form className='mb-5 mt-5 bg-dark p-5 shadow-lg mx-10' onSubmit={handleSubmit(onSubmit)} style={{ borderRadius: "50px" ,width:'100%'}}>
             <h2 className='text-center mt-3 text-light'>Sign Up</h2>
 
             {/* Username Field */}
@@ -141,7 +141,7 @@ function Register() {
           </form>
         </div>
         <div className="col-lg-6 log mt-5">
-          <video src={reg}   autoPlay muted playsInline loop style={{borderRadius:'50%',marginLeft:'100px'}}/>
+          <video src={reg}   autoPlay muted playsInline loop style={{borderRadius:'50%',marginLeft:'10%',width:'90%'}}/>
         </div>
       </div>
     </div>

@@ -10,6 +10,7 @@ import { CiLogout } from "react-icons/ci";
 import { IoSettings } from "react-icons/io5";
 import { usercontext } from '../../context/userLoginContext';
 import Axios from 'axios';
+import { RiCloseLargeFill } from "react-icons/ri";
 
 
 function Header() {
@@ -54,7 +55,7 @@ function Header() {
         <img src={Logo} alt="Logo" style={{ width: '300px', height: '60px', borderRadius: '10px' }} />
         <div className="hamburger" onClick={toggleMenu}>
           {menuOpen ? (
-            <span className="fs-5 text-dark">&#10006;</span>
+            <span className="fs-5 text-warning"><RiCloseLargeFill className='fs-1' /></span>
           ) : (
             <>
               <div className="line"></div>
