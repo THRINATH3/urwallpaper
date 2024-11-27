@@ -19,7 +19,7 @@ function Register() {
 
   async function onSubmit(data) {
     try {
-      let res = await fetch('https://urwallpaper-react.vercel.app/user-api/user', {
+      let res = await fetch('https://urwallpaper-react-5slw.vercel.app/user-api/user', {
         method: 'POST',
         headers: {
           "Content-Type": "application/json"

@@ -67,6 +67,7 @@ router.get('/get-images', async (req, res) => {
         message: 'Images retrieved successfully!',
         data: imagesWithContext,
       });
+      
     } catch (error) {
       console.error(error);
       res.status(500).json({ message: 'Failed to retrieve images', error });
