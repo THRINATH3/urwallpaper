@@ -26,7 +26,7 @@ function Wallpapers() {
   // Fetch images from the backend
   async function getImage() {
     try {
-      const response = await fetch('https://urwallpaper-react-5slw.vercel.app/image-api/get-images');
+      const response = await fetch('https://urwallpaper-react-x2el.vercel.app/image-api/get-images');
       const result = await response.json();
   
       if (result.data) {
@@ -62,7 +62,7 @@ function Wallpapers() {
   async function deleteImage(publicId) {
     try {
       const response = await fetch(
-        `https://urwallpaper-react-5slw.vercel.app/image-api/delete-image/${encodeURIComponent(publicId)}`,
+        `https://urwallpaper-react-x2el.vercel.app/image-api/delete-image/${encodeURIComponent(publicId)}`,
         { method: 'DELETE' }
       );
   

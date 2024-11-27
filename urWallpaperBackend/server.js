@@ -4,7 +4,7 @@ const app=express();
 const cors=require('cors');
 
 app.use(cors({
-    origin:'https://urwallpaper.vercel.app'
+    origin:'https://urwallpaper-react.vercel.app'
 }))
 
 app.use(express.json());

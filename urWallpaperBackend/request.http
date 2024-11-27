@@ -1,4 +1,4 @@
-post https://urwallpaper-react-5slw.vercel.app/user-api/user
+post https://urwallpaper-react-x2el.vercel.app/user-api/user
 Content-Type: application/json
 
 {
@@ -7,7 +7,7 @@ Content-Type: application/json
 }
 
 ###
-post https://urwallpaper-react-5slw.vercel.app/user-api/login
+post https://urwallpaper-react-x2el.vercel.app/user-api/login
 Content-Type: application/json
 
 {
@@ -16,7 +16,7 @@ Content-Type: application/json
 }
 
 ###
-get https://urwallpaper-react-5slw.vercel.app/image-api/get-images
+get https://urwallpaper-react-x2el.vercel.app/image-api/get-images
 
 ###
-delete https://urwallpaper-react-5slw.vercel.app/image-api/delete-image/wallpapers%2Fkvq0llpxakul1lh9nso5
+delete https://urwallpaper-react-x2el.vercel.app/image-api/delete-image/wallpapers%2Fkvq0llpxakul1lh9nso5
