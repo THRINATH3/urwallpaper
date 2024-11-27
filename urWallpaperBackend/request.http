@@ -1,0 +1,22 @@
+post http://localhost:3000/user-api/user
+Content-Type: application/json
+
+{
+    "username":"Thrinath",
+    "password":"22501A05E9"
+}
+
+###
+post http://localhost:3000/user-api/login
+Content-Type: application/json
+
+{
+    "username":"Thrinath",
+    "password":"22501A05E9"
+}
+
+###
+get http://localhost:3000/image-api/get-images
+
+###
+delete http://localhost:3000/image-api/delete-image/wallpapers%2Fkvq0llpxakul1lh9nso5

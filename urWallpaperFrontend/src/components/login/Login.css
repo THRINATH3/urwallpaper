@@ -1,0 +1,31 @@
+.createAccount{
+    text-decoration: none;
+}
+
+.sub:hover{
+    background-color: rgb(156, 193, 23) !important;
+    color: white !important;
+}
+
+.containerFont{
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    color: white;
+}
+
+
+
+@media screen and (max-width:390px){
+   .form{
+    width:100%;
+   } 
+}
+
+@media screen and (max-width:992px){
+    .log{
+        display: none;
+    }
+}
+
