@@ -43,8 +43,7 @@ header {
     background: rgb(82, 82, 82);
   }
   
-  header .a {
-    text-decoration: none;
+  header{
     font-family: "Marcellus", serif;
     font-weight: 600;
     font-style: normal;
@@ -52,7 +51,9 @@ header {
     color: white;
   }
   
-  
+  header a{
+    text-decoration: none;
+  }
   .nav-bar .logout{
     text-decoration: none;
     font-family: 'Varela Round', sans-serif;
@@ -66,13 +67,12 @@ header {
     color: white;
   }
   
-  /* New styles for when menu is active */
   .main-content {
     transition: padding-top 0.5s;
   }
   
   .main-content.menu-open {
-    padding-top: 400px; /* Adjust this value to match the height of your nav when expanded */
+    padding-top: 400px;
   }
   
   .dropdown:hover{
