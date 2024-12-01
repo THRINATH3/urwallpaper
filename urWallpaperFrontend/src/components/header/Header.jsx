@@ -50,7 +50,7 @@ function Header() {
   
 
   return (
-    <div>
+    <div className='fixed-top mb-5 bg-black'>
       <header className="pt-3">
         <img src={Logo} alt="Logo" style={{ width: '300px', height: '60px', borderRadius: '10px' }} />
         <div className="hamburger" onClick={toggleMenu}>
@@ -140,9 +140,9 @@ function Header() {
         </nav>
       </header>
 
-      {/* Adjust main content when menu is open */}
+      
       <div className={`main-content ${menuOpen ? 'menu-open' : ''}`}>
-        {/* Your main content goes here */}
+       
       </div>
 
       <hr />

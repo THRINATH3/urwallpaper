@@ -41,7 +41,7 @@ function Register() {
   }
 
   return (
-    <div className='container containerFont' >
+    <div className='container containerFont' style={{paddingTop:'140px'}}>
       <div className='mt-5'>
         <h1 className='text-center'>Create an Account</h1>
         <p className='text-center'>Join our community and personalize your experience with stunning wallpapers!</p>
