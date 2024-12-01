@@ -30,7 +30,7 @@ function Login() {
   }, [loginStatus]);
 
   return (
-    <div className='container containerFont' style={{paddingTop:'140px'}}>
+    <div className='container containerFont'>
       <div className="row">
         <div className="col-lg-6 log">
           <video src={login}   autoPlay muted playsInline loop/>

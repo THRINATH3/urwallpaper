@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <div className="main container py-5 mt-5">
+    <div className="main container py-5">
       <div className="row align-items-center mb-5">
         <div className="col-12 col-md-6 text-center text-md-start">
           <h1 className="display-4 fw-bold mb-3">Welcome to Ur WaLLpApEr!</h1>

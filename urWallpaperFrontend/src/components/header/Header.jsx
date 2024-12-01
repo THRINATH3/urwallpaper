@@ -50,7 +50,7 @@ function Header() {
   
 
   return (
-    <div className='fixed-top mb-5 bg-black'>
+    <div>
       <header className="pt-3">
         <img src={Logo} alt="Logo" style={{ width: '300px', height: '60px', borderRadius: '10px' }} />
         <div className="hamburger" onClick={toggleMenu}>

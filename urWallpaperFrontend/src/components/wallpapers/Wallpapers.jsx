@@ -110,7 +110,7 @@ function Wallpapers() {
   ];
 
   return (
-    <div className="container mt-5 Font" style={{ backgroundColor: "black",paddingTop:"50px" }}>
+    <div className="container mt-5 Font" style={{ backgroundColor: "black" }}>
       <h1 className='text-center mt-5 mb-5'>Our Wallpapers</h1>
       <div className="row">
         {imagesData.map((image, index) => (
