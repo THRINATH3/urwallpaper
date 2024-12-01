@@ -49,7 +49,8 @@ function Home() {
             <p>
               <i>"Ur WaLlPaPeR offers an amazing collection of wallpapers. My phone has never looked this good!"</i>
             </p>
-            <p className="text-end text-warning">- Emily, New York</p>
+            <p className="text-end text-warning">- Anwar
+            </p>
           </div>
         </div>
         <div className="col-12 col-md-6 mb-4">
@@ -57,7 +58,7 @@ function Home() {
             <p>
               <i>"I found the perfect wallpapers for my desktop setup. Highly recommend this platform!"</i>
             </p>
-            <p className="text-end text-warning">- Alex, California</p>
+            <p className="text-end text-warning">- Madhu</p>
           </div>
         </div>
       </div>
