@@ -7,6 +7,7 @@ import { RiLockPasswordFill } from "react-icons/ri";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import reg from '../pictures/reg.mp4'
+
 function Register() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const [showPassword, setShowPassword] = useState(false);
@@ -136,7 +137,8 @@ function Register() {
 
             {/* Submit Button */}
             <div className='mb-3 text-center'>
-              <button type="submit" className='btn btn-info text-white fs-5 sub' style={{borderRadius:'20px',width:'200px'}}>Register</button>
+              <button type="submit" className='btn btn-info text-white fs-5 sub' style={{borderRadius:'20px',width:'200px'}}>Register</button><br /> <br />
+              {/* <button type="submit" className='btn btn-info text-white fs-5 sub' style={{borderRadius:'20px',width:'200px'}}>SignIn with google</button> */}
             </div>
           </form>
         </div>

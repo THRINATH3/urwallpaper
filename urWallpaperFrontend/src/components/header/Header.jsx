@@ -11,13 +11,22 @@ import { IoSettings } from "react-icons/io5";
 import { usercontext } from '../../context/userLoginContext';
 import Axios from 'axios';
 import { RiCloseLargeFill } from "react-icons/ri";
-
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const { loginStatus, curruser, logout } = useContext(usercontext);
   const [userInfo, setUserInfo] = useState({});
 
+  useGSAP(()=>{
+    gsap.from(".hdani",{
+      y:-70,
+      duration:1,
+      delay:0.5,
+      stagger:0.5
+    })
+  })
 
   function toggleMenu() {
     setMenuOpen(!menuOpen);
@@ -52,7 +61,7 @@ function Header() {
   return (
     <div>
       <header className="pt-3">
-        <img src={Logo} alt="Logo" style={{ width: '300px', height: '60px', borderRadius: '10px' }} />
+        <img className='hdani' src={Logo} alt="Logo" style={{ width: '300px', height: '60px', borderRadius: '10px' }} />
         <div className="hamburger" onClick={toggleMenu}>
           {menuOpen ? (
             <span className="fs-5 text-warning"><RiCloseLargeFill className='fs-1' /></span>
@@ -66,21 +75,21 @@ function Header() {
         </div>
         <nav className={`nav-bar mb-5 ${menuOpen ? 'active' : ''}`}>
           <ul className="list-unstyled text-white unli">
-            <li><Link to="/" className="a"><FaHome className='text-white mb-1 mx-1' />Home</Link></li>
-            <li><Link to="/about" className="a"><FcAbout className='mx-1' />About</Link></li>
+            <li className='hdani'><Link to="/" className="a"><FaHome className='text-white mb-1 mx-1' />Home</Link></li>
+            <li className='hdani'><Link to="/about" className="a"><FcAbout className='mx-1' />About</Link></li>
             {!loginStatus ? (
-              <li>
+              <li className='hdani'>
                 <label 
                   htmlFor="fileupload" 
                   className="a" 
                   style={{ cursor: 'pointer' }} 
                   onClick={upload}
                 >
-                  <MdFileUploadOff className='text-white mb-1 mx-1' /> Upload
+                  <MdFileUploadOff className='text-white mb-1 mx-1 ' /> Upload
                 </label>
               </li>
             ) : (
-              <li>
+              <li className='hdani'>
                 <label 
                   htmlFor="fileupload" 
                   className="a" 
@@ -97,7 +106,7 @@ function Header() {
                 />
               </li>
             )}
-            <li><Link to="/wallpapers" className="a"><MdWallpaper className='mb-1 mx-1' />Wallpapers</Link></li>
+            <li className='hdani'><Link to="/wallpapers" className="a"><MdWallpaper className='mb-1 mx-1' />Wallpapers</Link></li>
             {loginStatus ? (
               <div className="dropdown logoutbutton">
                 <button 
@@ -130,9 +139,9 @@ function Header() {
                 </ul>
               </div>
             ) : (
-              <li>
+              <li className='hdani'>
                 <Link to="/login" className="a">
-                  <FiLogIn className='mx-1' />Login/SignUp
+                  <FiLogIn className='mx-1 ' />Login/SignUp
                 </Link>
               </li>
             )}

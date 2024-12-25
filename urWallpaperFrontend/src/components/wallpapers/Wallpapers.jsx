@@ -16,9 +16,24 @@ import image13 from '../pictures/IMG_20221117_174722.jpg';
 import UserLoginStore from '../../context/userLoginstore';
 import { usercontext } from '../../context/userLoginContext';
 import { RiDeleteBin6Fill } from "react-icons/ri";
-
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 function Wallpapers() {
+
+
+  useGSAP(()=>{
+    gsap.from(".wallani",{
+      scale:0,
+      duration:2,
+      delay:0.5,
+      color:"red",
+      ///backgroundColor:"white",
+      padding:"500px",
+      fontSize:"100px",
+      opacity:0
+    })
+  })
 
   const { loginStatus, curruser, logout } = useContext(usercontext);
   const [cloudinaryImages, setCloudinaryImages] = useState([]);
@@ -111,7 +126,7 @@ function Wallpapers() {
 
   return (
     <div className="container mt-5 Font" style={{ backgroundColor: "black" }}>
-      <h1 className='text-center mt-5 mb-5'>Our Wallpapers</h1>
+      <h1 className='text-center mt-5 mb-5 wallani'>Our Wallpapers</h1>
       <div className="row">
         {imagesData.map((image, index) => (
           <div className="col-lg-4 col-md-6 col-sm-12" key={index}>
